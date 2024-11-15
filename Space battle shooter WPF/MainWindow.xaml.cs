@@ -211,12 +211,14 @@ namespace Space_battle_shooter_WPF
                     if (Canvas.GetTop(x) > Application.Current.MainWindow.Height)
                     {
                         itemsToRemove.Add(x);
-                        damage += 10;
+                        damage += 5;
                     }
                     if (playerHitBox.IntersectsWith(enemy))
                     {
-                        damage += 5;
+                        damage += 10;
                         itemsToRemove.Add(x);
+                        explosionSound.Position = TimeSpan.Zero;
+                        explosionSound.Play();
                     }
                 }
             }
@@ -296,6 +298,7 @@ namespace Space_battle_shooter_WPF
         {
             if (!isPaused)
             {
+
                 gameTimer.Stop();
                 shootingTimer.Stop();
                 enemyShootingTimer.Stop();

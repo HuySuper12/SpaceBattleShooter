@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Space_battle_shooter_WPF"
         mc:Ignorable="d"
-        Title="Space Shooter Game" Height="802" Width="660" WindowStartupLocation="CenterScreen">
+        Title="Space Shooter Game" Height="802" Width="660" WindowStartupLocation="CenterScreen" Icon="D:\PRN - game\Space battle shooter WPF\Space battle shooter WPF\Images\player.ico">
     <Canvas Background="LightBlue" Name="MyCanvas" KeyDown="onKeyDown" KeyUp="onKeyUp" Focusable="True">
         <Rectangle Name="player" Height="50" Width="60" Fill="Yellow" Canvas.Left="300" Canvas.Top="659"/>
         <Label Name="scoreText" Content="Score: 0" FontSize="18" FontWeight="Bold" Foreground="White"/>
@@ -16,3 +16,5 @@
         <!-- Other UI elements like your player, background, etc. -->
     </Canvas>
 </Window>
+
+
