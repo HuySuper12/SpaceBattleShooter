@@ -59,17 +59,18 @@ namespace Space_battle_shooter_WPF
             MyCanvas.Focus();
 
             // Load sounds
-            shootSound.Open(new Uri("D:\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Sound\\laser-gun-174976.wav"));
-            explosionSound.Open(new Uri("D:\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Sound\\medium-explosion-40472.wav"));
+            // For sounds (assuming 'laser-gun-174976.wav' and 'medium-explosion-40472.wav' are in the 'Sound' folder)
+            shootSound.Open(new Uri("pack://application:,,,/Sound/laser-gun-174976.wav"));
+            explosionSound.Open(new Uri("pack://application:,,,/Sound/medium-explosion-40472.wav"));
 
-            // Set background image
+            // For setting background image (assuming 'purple.png' is in the 'Images' folder)
             ImageBrush bg = new ImageBrush();
-            bg.ImageSource = new BitmapImage(new Uri("D:\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Images\\purple.png"));
+            bg.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Images/purple.png"));
             MyCanvas.Background = bg;
 
-            // Set player image
+            // For setting player image (assuming 'player.png' is in the 'Images' folder)
             ImageBrush playerImage = new ImageBrush();
-            playerImage.ImageSource = new BitmapImage(new Uri("D:\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Images\\player.png"));
+            playerImage.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Images/player.png"));
             player.Fill = playerImage;
         }
 
@@ -246,19 +247,19 @@ namespace Space_battle_shooter_WPF
             switch (enemySpriteCounter)
             {
                 case 1:
-                    enemySprite.ImageSource = new BitmapImage(new Uri("D:\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Images\\1.png"));
+                    enemySprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Images/1.png"));
                     break;
                 case 2:
-                    enemySprite.ImageSource = new BitmapImage(new Uri("D:\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Images\\2.png"));
+                    enemySprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Images/2.png"));
                     break;
                 case 3:
-                    enemySprite.ImageSource = new BitmapImage(new Uri("D:\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Images\\3.png"));
+                    enemySprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Images/3.png"));
                     break;
                 case 4:
-                    enemySprite.ImageSource = new BitmapImage(new Uri("D:\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Images\\4.png"));
+                    enemySprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Images/4.png"));
                     break;
                 case 5:
-                    enemySprite.ImageSource = new BitmapImage(new Uri("D:\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Images\\5.png"));
+                    enemySprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Images/5.png"));
                     break;
             }
 
