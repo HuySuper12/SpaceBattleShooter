@@ -1,0 +1,18 @@
+﻿<Window x:Class="Space_battle_shooter_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Space_battle_shooter_WPF"
+        mc:Ignorable="d"
+        Title="Space Shooter Game" Height="802" Width="660" WindowStartupLocation="CenterScreen">
+    <Canvas Background="LightBlue" Name="MyCanvas" KeyDown="onKeyDown" KeyUp="onKeyUp" Focusable="True">
+        <Rectangle Name="player" Height="50" Width="60" Fill="Yellow" Canvas.Left="300" Canvas.Top="659"/>
+        <Label Name="scoreText" Content="Score: 0" FontSize="18" FontWeight="Bold" Foreground="White"/>
+        <Label Name="damageText" Content="Damage: 0" FontSize="18" FontWeight="Bold" Canvas.Right="0" Foreground="White"/>
+        <Button Content="Pause" Width="100" Height="30" Click="PauseGame" Canvas.Left="175" Canvas.Top="14"/>
+        <Button Content="Restart" Width="100" Height="30" Click="RestartGame" Canvas.Left="285" Canvas.Top="14"/>
+        <Button Content="Close" Width="100" Height="30" Click="CloseGame" Canvas.Left="395" Canvas.Top="14"/>
+        <!-- Other UI elements like your player, background, etc. -->
+    </Canvas>
+</Window>

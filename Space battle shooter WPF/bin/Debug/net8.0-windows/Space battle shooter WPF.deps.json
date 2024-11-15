@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Space battle shooter WPF/1.0.0": {
+        "runtime": {
+          "Space battle shooter WPF.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Space battle shooter WPF/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
