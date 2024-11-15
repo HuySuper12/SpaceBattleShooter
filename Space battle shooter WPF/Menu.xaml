@@ -18,8 +18,6 @@
 
         <Button Content="Play" Width="200" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Green" Foreground="White" Margin="114,370,0,0" Grid.Column="1" Click="Button_Click"/>
 
-        <!-- Quit Button -->
-        <Button Content="Quit" Width="200" Height="50" HorizontalAlignment="Left" VerticalAlignment="Bottom" Background="Red" Foreground="White" Margin="114,0,0,89" Grid.Column="1" Click="Button_Click_1"/>
 
         <!-- Spaceship Image -->
         <Image Source="D:\PRN - game\Space battle shooter WPF\Space battle shooter WPF\Images\player.png" Width="230" Height="175" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="99,0,0,298" RenderTransformOrigin="2.228,-1.146" Grid.Column="1"/>

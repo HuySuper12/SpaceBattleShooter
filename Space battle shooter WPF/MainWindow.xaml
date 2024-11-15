@@ -8,11 +8,16 @@
         Title="Space Shooter Game" Height="802" Width="660" WindowStartupLocation="CenterScreen" Icon="D:\PRN - game\Space battle shooter WPF\Space battle shooter WPF\Images\player.ico">
     <Canvas Background="LightBlue" Name="MyCanvas" KeyDown="onKeyDown" KeyUp="onKeyUp" Focusable="True">
         <Rectangle Name="player" Height="50" Width="60" Fill="Yellow" Canvas.Left="300" Canvas.Top="659"/>
-        <Label Name="scoreText" Content="Score: 0" FontSize="18" FontWeight="Bold" Foreground="White"/>
-        <Label Name="damageText" Content="Damage: 0" FontSize="18" FontWeight="Bold" Canvas.Right="0" Foreground="White"/>
-        <Button Content="Pause" Width="100" Height="30" Click="PauseGame" Canvas.Left="175" Canvas.Top="14"/>
-        <Button Content="Restart" Width="100" Height="30" Click="RestartGame" Canvas.Left="285" Canvas.Top="14"/>
-        <Button Content="Close" Width="100" Height="30" Click="CloseGame" Canvas.Left="395" Canvas.Top="14"/>
+        <Label Name="scoreText" Content="Score: 0" FontSize="18" FontWeight="Bold" Foreground="White" Canvas.Left="519" Canvas.Top="49" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Name="damageText" Content="Damage: 0" FontSize="18" FontWeight="Bold" Canvas.Right="0" Foreground="White" Canvas.Left="519" Canvas.Top="10"/>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <StackPanel Name="MenuPanel" Visibility="Collapsed" Orientation="Vertical">
+                <Button Content="Pause" Click="PauseGame"/>
+                <Button Content="Restart" Click="RestartGame"/>
+                <Button Content="Close" Click="CloseGame"/>
+            </StackPanel>
+            <Button x:Name="MainButton" Content="Menu" Click="MainButton_Click" Height="45" Width="106"/>
+        </StackPanel>
         <!-- Other UI elements like your player, background, etc. -->
     </Canvas>
 </Window>

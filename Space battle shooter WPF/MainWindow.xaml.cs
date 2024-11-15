@@ -23,9 +23,11 @@ namespace Space_battle_shooter_WPF
         private int enemyCounter = 100;
         private int playerSpeed = 10;
         private int score = 0;
-        private int damage = 0;
+        private int damage = 100;
         private Rect playerHitBox;
         private int weaponLevel = 1;
+        private bool hasCollectedBulletItem = false;
+        private bool hasCollectedSecondBulletItem = false;
 
         private MediaPlayer shootSound = new MediaPlayer();
         private MediaPlayer explosionSound = new MediaPlayer();
@@ -75,7 +77,8 @@ namespace Space_battle_shooter_WPF
 
         private void ShootBullet(object sender, EventArgs e)
         {
-            Rectangle newBullet = new Rectangle
+            // Create the first bullet
+            Rectangle newBullet1 = new Rectangle
             {
                 Tag = "bullet",
                 Height = 20,
@@ -83,9 +86,43 @@ namespace Space_battle_shooter_WPF
                 Fill = Brushes.White,
                 Stroke = Brushes.Cyan
             };
-            Canvas.SetTop(newBullet, Canvas.GetTop(player) - newBullet.Height);
-            Canvas.SetLeft(newBullet, Canvas.GetLeft(player) + player.Width / 2);
-            MyCanvas.Children.Add(newBullet);
+            Canvas.SetTop(newBullet1, Canvas.GetTop(player) - newBullet1.Height);
+            Canvas.SetLeft(newBullet1, Canvas.GetLeft(player) + player.Width / 2 - 10); // Adjust position for the first bullet
+            MyCanvas.Children.Add(newBullet1);
+
+            if (hasCollectedBulletItem)
+            {
+                // Create the second bullet
+                Rectangle newBullet2 = new Rectangle
+                {
+                    Tag = "bullet",
+                    Height = 20,
+                    Width = 5 + (weaponLevel * 2), // Increase bullet size based on weapon level
+                    Fill = Brushes.White,
+                    Stroke = Brushes.Cyan
+                };
+                Canvas.SetTop(newBullet2, Canvas.GetTop(player) - newBullet2.Height);
+                Canvas.SetLeft(newBullet2, Canvas.GetLeft(player) + player.Width / 2 + 10); // Adjust position for the second bullet
+                MyCanvas.Children.Add(newBullet2);
+            }
+
+            if (hasCollectedSecondBulletItem)
+            {
+                // Create the third bullet
+                Rectangle newBullet3 = new Rectangle
+                {
+                    Tag = "bullet",
+                    Height = 20,
+                    Width = 5 + (weaponLevel * 2), // Increase bullet size based on weapon level
+                    Fill = Brushes.White,
+                    Stroke = Brushes.Cyan
+                };
+                Canvas.SetTop(newBullet3, Canvas.GetTop(player) - newBullet3.Height);
+                Canvas.SetLeft(newBullet3, Canvas.GetLeft(player) + player.Width / 2); // Adjust position for the third bullet
+                MyCanvas.Children.Add(newBullet3);
+            }
+
+
             shootSound.Position = TimeSpan.Zero;
             shootSound.Play();
         }
@@ -128,6 +165,14 @@ namespace Space_battle_shooter_WPF
                     {
                         bulletsToRemove.Add(bullet);
                     }
+
+                    // Check for collision with player
+                    Rect bulletHitBox = new Rect(Canvas.GetLeft(bullet), Canvas.GetTop(bullet), bullet.Width, bullet.Height);
+                    if (bulletHitBox.IntersectsWith(playerHitBox))
+                    {
+                        bulletsToRemove.Add(bullet);
+                        damage -= 10; // Increase damage when player is hit
+                    }
                 }
             }
             foreach (var bullet in bulletsToRemove)
@@ -141,26 +186,61 @@ namespace Space_battle_shooter_WPF
             playerHitBox = new Rect(Canvas.GetLeft(player), Canvas.GetTop(player), player.Width, player.Height);
             enemyCounter--;
             scoreText.Content = "Score: " + score;
-            damageText.Content = "Damage: " + damage;
+            damageText.Content = "Health: " + damage;
 
             if (enemyCounter < 0)
             {
-                makeEnemies();
-                enemyCounter = 100; // Reset enemy counter
+                makeEnemies(1, 6);
+                enemyCounter = rand.Next(200, 400); // Reset enemy counter
             }
 
             HandlePlayerMovement();
             HandleBulletsAndEnemies();
             RemoveOffScreenItems();
+            MoveBullets();
 
             if (score > 5)
             {
-                enemyCounter = 50; // Enemies spawn faster
+                enemyCounter = 30; // Enemies spawn faster
             }
 
-            if (damage > 50)
+            if (damage == 0)
             {
                 EndGame();
+            }
+
+            if (rand.Next(0, 800) < 1) // Adjusted probability to 2%
+            {
+                makeHealthItem();
+            }
+
+            if (rand.Next(0, 800) < 1) // Adjusted probability to 0.1%
+            {
+                makeBulletItem();
+            }
+
+            // Use bulletCollected boolean for further logic if needed
+
+            // Check if there are no enemies left and create new ones
+            if (!MyCanvas.Children.OfType<Rectangle>().Any(r => (string)r.Tag == "enemy"))
+            {
+                if (score >= 100)
+                {
+                    makeEnemies(12, 15);
+                }
+                else if (score >= 70)
+                {
+                    makeEnemies(8, 14);
+                }
+                else if (score >= 40)
+                {
+                    makeEnemies(6, 10);
+                }
+                else
+                {
+                    makeEnemies(1, 3);
+                }
+                enemyCounter = rand.Next(200, 400); // Reset enemy counter
             }
         }
 
@@ -176,8 +256,40 @@ namespace Space_battle_shooter_WPF
                 Canvas.SetTop(player, Canvas.GetTop(player) + playerSpeed);
         }
 
+        private void MoveBullets()
+        {
+            var bulletsToRemove = new List<Rectangle>();
+            foreach (UIElement element in MyCanvas.Children)
+            {
+                if (element is Rectangle bullet && (string)bullet.Tag == "bullet")
+                {
+                    // Move the first bullet straight up
+                    if (Canvas.GetLeft(bullet) == Canvas.GetLeft(player) + player.Width / 2 - 10)
+                    {
+                        Canvas.SetTop(bullet, Canvas.GetTop(bullet));
+                    }
+                    // Move the second bullet diagonally
+                    else if (Canvas.GetLeft(bullet) == Canvas.GetLeft(player) + player.Width / 2 + 10)
+                    {
+                        Canvas.SetTop(bullet, Canvas.GetTop(bullet));
+                        Canvas.SetLeft(bullet, Canvas.GetLeft(bullet) + 5); // Adjust for diagonal movement
+                    }
+
+                    if (Canvas.GetTop(bullet) < 10)
+                    {
+                        bulletsToRemove.Add(bullet);
+                    }
+                }
+            }
+            foreach (var bullet in bulletsToRemove)
+            {
+                MyCanvas.Children.Remove(bullet);
+            }
+        }
+
         private void HandleBulletsAndEnemies()
         {
+
             foreach (var x in MyCanvas.Children.OfType<Rectangle>())
             {
                 if (x is Rectangle && (string)x.Tag == "bullet")
@@ -208,20 +320,46 @@ namespace Space_battle_shooter_WPF
                 {
                     Canvas.SetTop(x, Canvas.GetTop(x) + 3);
                     Rect enemy = new Rect(Canvas.GetLeft(x), Canvas.GetTop(x), x.Width, x.Height);
-                    if (Canvas.GetTop(x) > Application.Current.MainWindow.Height)
-                    {
-                        itemsToRemove.Add(x);
-                        damage += 5;
-                    }
+
                     if (playerHitBox.IntersectsWith(enemy))
                     {
-                        damage += 10;
+                        damage -= 10;
                         itemsToRemove.Add(x);
                         explosionSound.Position = TimeSpan.Zero;
                         explosionSound.Play();
                     }
                 }
+
+                if (x is Rectangle && (string)x.Tag == "healthItem")
+                {
+                    Canvas.SetTop(x, Canvas.GetTop(x) + 3); // Move health item down
+                    Rect healthItem = new Rect(Canvas.GetLeft(x), Canvas.GetTop(x), x.Width, x.Height);
+                    if (playerHitBox.IntersectsWith(healthItem))
+                    {
+                        damage = Math.Min(damage + 20, 100); // Ensure health does not exceed 100
+                        itemsToRemove.Add(x); // Add to itemsToRemove to remove it later
+                    }
+                }
+
+                if (x is Rectangle && (string)x.Tag == "bulletItem")
+                {
+                    Canvas.SetTop(x, Canvas.GetTop(x) + 3); // Move bullet item down
+                    Rect bulletItem = new Rect(Canvas.GetLeft(x), Canvas.GetTop(x), x.Width, x.Height);
+                    if (playerHitBox.IntersectsWith(bulletItem))
+                    {
+                        if (!hasCollectedBulletItem)
+                        {
+                            hasCollectedBulletItem = true; // Set the flag to true when bullet item is collected
+                        }
+                        else
+                        {
+                            hasCollectedSecondBulletItem = false; // Set the flag to true when second bullet item is collected
+                        }
+                        itemsToRemove.Add(x); // Add to itemsToRemove to remove it later
+                    }
+                }
             }
+
         }
 
         private void RemoveOffScreenItems()
@@ -236,44 +374,55 @@ namespace Space_battle_shooter_WPF
         private void EndGame()
         {
             gameTimer.Stop();
+            enemyShootingTimer.Stop(); // Dừng bắn đạn của kẻ thù
             MessageBox.Show("You have lost!" + Environment.NewLine + "You have destroyed " + score + " Alien ships");
         }
 
-        private void makeEnemies()
+        private void makeEnemies(int a, int b)
         {
-            ImageBrush enemySprite = new ImageBrush();
-            int enemySpriteCounter = rand.Next(1, 6);
-            switch (enemySpriteCounter)
+            int numberOfEnemies = rand.Next(a, b); // Random number of enemies to create
+
+            for (int i = 0; i < numberOfEnemies; i++)
             {
-                case 1:
-                    enemySprite.ImageSource = new BitmapImage(new Uri("D:\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Images\\1.png"));
-                    break;
-                case 2:
-                    enemySprite.ImageSource = new BitmapImage(new Uri("D:\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Images\\2.png"));
-                    break;
-                case 3:
-                    enemySprite.ImageSource = new BitmapImage(new Uri("D:\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Images\\3.png"));
-                    break;
-                case 4:
-                    enemySprite.ImageSource = new BitmapImage(new Uri("D:\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Images\\4.png"));
-                    break;
-                case 5:
-                    enemySprite.ImageSource = new BitmapImage(new Uri("D:\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Images\\5.png"));
-                    break;
+                ImageBrush enemySprite = new ImageBrush();
+                int enemySpriteCounter = rand.Next(1, 6);
+                switch (enemySpriteCounter)
+                {
+                    case 1:
+                        enemySprite.ImageSource = new BitmapImage(new Uri("D:\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Images\\1.png"));
+                        break;
+                    case 2:
+                        enemySprite.ImageSource = new BitmapImage(new Uri("D:\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Images\\2.png"));
+                        break;
+                    case 3:
+                        enemySprite.ImageSource = new BitmapImage(new Uri("D:\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Images\\3.png"));
+                        break;
+                    case 4:
+                        enemySprite.ImageSource = new BitmapImage(new Uri("D:\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Images\\4.png"));
+                        break;
+                    case 5:
+                        enemySprite.ImageSource = new BitmapImage(new Uri("D:\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Images\\5.png"));
+                        break;
+                    default:
+                        enemySprite.ImageSource = new BitmapImage(new Uri("D:\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Images\\1.png"));
+                        break;
+                }
+
+                Rectangle newEnemy = new Rectangle
+                {
+                    Tag = "enemy",
+                    Width = 50,
+                    Height = 50,
+                    Fill = enemySprite
+                };
+
+                Canvas.SetTop(newEnemy, rand.Next(-100, -50)); // Randomize the initial position
+                Canvas.SetLeft(newEnemy, rand.Next(0, (int)MyCanvas.ActualWidth - 50));
+                MyCanvas.Children.Add(newEnemy);
             }
-
-            Rectangle newEnemy = new Rectangle
-            {
-                Tag = "enemy",
-                Width = 50,
-                Height = 50,
-                Fill = enemySprite
-            };
-
-            Canvas.SetTop(newEnemy, -100);
-            Canvas.SetLeft(newEnemy, rand.Next(0, (int)MyCanvas.ActualWidth - 50));
-            MyCanvas.Children.Add(newEnemy);
         }
+
+
 
         private void onKeyDown(object sender, KeyEventArgs e)
         {
@@ -319,18 +468,27 @@ namespace Space_battle_shooter_WPF
         private void RestartGame(object sender, RoutedEventArgs e)
         {
             score = 0;
-            damage = 0;
+            damage = 100;
             enemyCounter = 100;
 
             // Clear all bullets and enemies from the Canvas
-            foreach (var item in MyCanvas.Children.OfType<Rectangle>().Where(r => (string)r.Tag == "bullet" || (string)r.Tag == "enemy" || (string)r.Tag == "enemyBullet").ToList())
+            foreach (var item in MyCanvas.Children.OfType<Rectangle>().Where(r => (string)r.Tag == "bullet" || (string)r.Tag == "enemy" || (string)r.Tag == "enemyBullet" || (string)r.Tag == "healthItem" || (string)r.Tag == "bulletItem").ToList())
             {
                 MyCanvas.Children.Remove(item);
             }
 
+            // Clear any bullets that may have been shot
+            itemsToRemove.Clear(); // Ensure itemsToRemove is cleared to reset bullet state
+
+            
+
             // Reset player position
             Canvas.SetLeft(player, MyCanvas.ActualWidth / 2 - player.Width / 2);
             Canvas.SetTop(player, MyCanvas.ActualHeight - player.Height - 10);
+
+            // Reset bullet collection flags
+            hasCollectedBulletItem = false;
+            hasCollectedSecondBulletItem = false;
 
             // Restart timers
             gameTimer.Start();
@@ -339,14 +497,62 @@ namespace Space_battle_shooter_WPF
             bulletMoveTimer.Start();
         }
 
+        private void MainButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (MenuPanel.Visibility == Visibility.Collapsed)
+            {
+                MenuPanel.Visibility = Visibility.Visible; // Hiện menu
+            }
+            else
+            {
+                MenuPanel.Visibility = Visibility.Collapsed; // Ẩn menu
+            }
+        }
+
         // Close the game
         private void CloseGame(object sender, RoutedEventArgs e)
         {
             MessageBoxResult result = MessageBox.Show("Do you really want to quit the game?", "Quit?", MessageBoxButton.YesNo, MessageBoxImage.Stop);
             if (result == MessageBoxResult.Yes)
             {
-                this.Close();
+                Application.Current.Shutdown(); 
             }
         }
+
+        private void makeHealthItem()
+        {
+            ImageBrush healthSprite = new ImageBrush();
+            healthSprite.ImageSource = new BitmapImage(new Uri("D:\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Images\\z6035094980366_cbabde7ef03bb75023d5a53014280bce.jpg"));
+
+            Rectangle healthItem = new Rectangle
+            {
+                Tag = "healthItem",
+                Width = 20,
+                Height = 20,
+                Fill = healthSprite
+            };
+
+            Canvas.SetTop(healthItem, -20);
+            Canvas.SetLeft(healthItem, rand.Next(0, (int)MyCanvas.ActualWidth - 20));
+            MyCanvas.Children.Add(healthItem);
+        }
+        private void makeBulletItem()
+        {
+            ImageBrush bulletSprite = new ImageBrush();
+            bulletSprite.ImageSource = new BitmapImage(new Uri("D:\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Images\\lzTai.jpg"));
+
+            Rectangle bulletItem = new Rectangle
+            {
+                Tag = "bulletItem",
+                Width = 20,
+                Height = 20,
+                Fill = bulletSprite
+            };
+
+            Canvas.SetTop(bulletItem, -20);
+            Canvas.SetLeft(bulletItem, rand.Next(0, (int)MyCanvas.ActualWidth - 20));
+            MyCanvas.Children.Add(bulletItem);
+        }
+
     }
 }
