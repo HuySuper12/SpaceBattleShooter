@@ -5,18 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Space_battle_shooter_WPF"
         mc:Ignorable="d"
-        Title="Space Shooter Game" Height="802" Width="660" WindowStartupLocation="CenterScreen" Icon="D:\PRN - game\Space battle shooter WPF\Space battle shooter WPF\Images\player.ico">
+        Title="Space Shooter Game" Height="802" Width="660" WindowStartupLocation="CenterScreen" Icon="pack://application:,,,/Images/player.ico" ResizeMode="NoResize">
     <Canvas Background="LightBlue" Name="MyCanvas" KeyDown="onKeyDown" KeyUp="onKeyUp" Focusable="True">
         <Rectangle Name="player" Height="50" Width="60" Fill="Yellow" Canvas.Left="300" Canvas.Top="659"/>
         <Label Name="scoreText" Content="Score: 0" FontSize="18" FontWeight="Bold" Foreground="White" Canvas.Left="519" Canvas.Top="49" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Label Name="damageText" Content="Damage: 0" FontSize="18" FontWeight="Bold" Canvas.Right="0" Foreground="White" Canvas.Left="519" Canvas.Top="10"/>
         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top">
             <StackPanel Name="MenuPanel" Visibility="Collapsed" Orientation="Vertical">
-                <Button Content="Pause" Click="PauseGame"/>
-                <Button Content="Restart" Click="RestartGame"/>
-                <Button Content="Close" Click="CloseGame"/>
+                <Button Content="Pause" Click="PauseGame" Style="{StaticResource MenuButtonStyle}"/>
+                <Button Content="Restart" Click="RestartGame" Style="{StaticResource MenuButtonStyle}"/>
+                <Button Content="Close" Click="CloseGame" Style="{StaticResource MenuButtonStyle}"/>
             </StackPanel>
-            <Button x:Name="MainButton" Content="Menu" Click="MainButton_Click" Height="45" Width="106"/>
+            <Button x:Name="MainButton" Content="Menu" Click="MainButton_Click" Style="{StaticResource MenuButtonStyle}" Height="45" Width="106"/>
         </StackPanel>
         <!-- Other UI elements like your player, background, etc. -->
     </Canvas>

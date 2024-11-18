@@ -31,11 +31,15 @@ namespace Space_battle_shooter_WPF
 
         private MediaPlayer shootSound = new MediaPlayer();
         private MediaPlayer explosionSound = new MediaPlayer();
+        private MediaPlayer introSound = new MediaPlayer();
+        private MediaPlayer hitDamage = new MediaPlayer();
+        private MediaPlayer lose = new MediaPlayer();
 
         public MainWindow()
         {
             InitializeComponent();
             InitializeGame();
+
         }
 
         private void InitializeGame()
@@ -61,17 +65,21 @@ namespace Space_battle_shooter_WPF
             MyCanvas.Focus();
 
             // Load sounds
-            shootSound.Open(new Uri("D:\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Sound\\laser-gun-174976.wav"));
-            explosionSound.Open(new Uri("D:\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Sound\\medium-explosion-40472.wav"));
+            shootSound.Open(new Uri("pack://application:,,,/Sound/laser-gun-174976.wav"));
+            explosionSound.Open(new Uri("pack://application:,,,/Sound/medium-explosion-40472.wav"));
+            introSound.Open(new Uri("pack://application:,,,/Sound/intro.wav"));
+            hitDamage.Open(new Uri("pack://application:,,,/Sound/damage.wav"));
+            lose.Open(new Uri("pack://application:,,,/Sound/lose.wav"));
+            introSound.Play();
 
             // Set background image
             ImageBrush bg = new ImageBrush();
-            bg.ImageSource = new BitmapImage(new Uri("D:\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Images\\purple.png"));
+            bg.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Images/purple.png"));
             MyCanvas.Background = bg;
 
             // Set player image
             ImageBrush playerImage = new ImageBrush();
-            playerImage.ImageSource = new BitmapImage(new Uri("D:\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Images\\player.png"));
+            playerImage.ImageSource = new BitmapImage(new Uri("pack://application:,,/Images/player.png"));
             player.Fill = playerImage;
         }
 
@@ -172,6 +180,7 @@ namespace Space_battle_shooter_WPF
                     {
                         bulletsToRemove.Add(bullet);
                         damage -= 10; // Increase damage when player is hit
+                        hitDamage.Play();
                     }
                 }
             }
@@ -321,6 +330,13 @@ namespace Space_battle_shooter_WPF
                     Canvas.SetTop(x, Canvas.GetTop(x) + 3);
                     Rect enemy = new Rect(Canvas.GetLeft(x), Canvas.GetTop(x), x.Width, x.Height);
 
+                    if (Canvas.GetTop(x) + 50 > 800)
+                    {
+                        // if so first remove the enemy object
+                        itemsToRemove.Add(x);
+                        damage -= 10; // add 10 to the damage
+                    }
+
                     if (playerHitBox.IntersectsWith(enemy))
                     {
                         damage -= 10;
@@ -375,7 +391,41 @@ namespace Space_battle_shooter_WPF
         {
             gameTimer.Stop();
             enemyShootingTimer.Stop(); // Dừng bắn đạn của kẻ thù
-            MessageBox.Show("You have lost!" + Environment.NewLine + "You have destroyed " + score + " Alien ships");
+            lose.Play();
+            introSound.Stop();
+            MessageBoxResult result = MessageBox.Show("You have lost!" + Environment.NewLine + "You have destroyed " + score + " Alien ships", "Game Over", MessageBoxButton.OK);
+
+            if (result == MessageBoxResult.OK)
+            {
+                score = 0;
+                damage = 100;
+                enemyCounter = 100;
+
+                // Clear all bullets and enemies from the Canvas
+                foreach (var item in MyCanvas.Children.OfType<Rectangle>().Where(r => (string)r.Tag == "bullet" || (string)r.Tag == "enemy" || (string)r.Tag == "enemyBullet" || (string)r.Tag == "healthItem" || (string)r.Tag == "bulletItem").ToList())
+                {
+                    MyCanvas.Children.Remove(item);
+                }
+
+                // Clear any bullets that may have been shot
+                itemsToRemove.Clear(); // Ensure itemsToRemove is cleared to reset bullet state
+
+
+
+                // Reset player position
+                Canvas.SetLeft(player, MyCanvas.ActualWidth / 2 - player.Width / 2);
+                Canvas.SetTop(player, MyCanvas.ActualHeight - player.Height - 10);
+
+                // Reset bullet collection flags
+                hasCollectedBulletItem = false;
+                hasCollectedSecondBulletItem = false;
+
+                // Restart timers
+                gameTimer.Start();
+                shootingTimer.Start();
+                enemyShootingTimer.Start();
+                bulletMoveTimer.Start();
+            }
         }
 
         private void makeEnemies(int a, int b)
@@ -389,22 +439,19 @@ namespace Space_battle_shooter_WPF
                 switch (enemySpriteCounter)
                 {
                     case 1:
-                        enemySprite.ImageSource = new BitmapImage(new Uri("D:\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Images\\1.png"));
+                        enemySprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Images/1.png"));
                         break;
                     case 2:
-                        enemySprite.ImageSource = new BitmapImage(new Uri("D:\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Images\\2.png"));
+                        enemySprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Images/2.png"));
                         break;
                     case 3:
-                        enemySprite.ImageSource = new BitmapImage(new Uri("D:\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Images\\3.png"));
+                        enemySprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Images/3.png"));
                         break;
                     case 4:
-                        enemySprite.ImageSource = new BitmapImage(new Uri("D:\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Images\\4.png"));
+                        enemySprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Images/4.png"));
                         break;
                     case 5:
-                        enemySprite.ImageSource = new BitmapImage(new Uri("D:\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Images\\5.png"));
-                        break;
-                    default:
-                        enemySprite.ImageSource = new BitmapImage(new Uri("D:\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Images\\1.png"));
+                        enemySprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Images/5.png"));
                         break;
                 }
 
@@ -512,17 +559,20 @@ namespace Space_battle_shooter_WPF
         // Close the game
         private void CloseGame(object sender, RoutedEventArgs e)
         {
-            MessageBoxResult result = MessageBox.Show("Do you really want to quit the game?", "Quit?", MessageBoxButton.YesNo, MessageBoxImage.Stop);
+            MessageBoxResult result = MessageBox.Show("Do you really want to out the game?", "Close?", MessageBoxButton.YesNo, MessageBoxImage.Stop);
             if (result == MessageBoxResult.Yes)
             {
-                Application.Current.Shutdown(); 
+                introSound.Stop();
+                Menu menu = new Menu();
+                menu.Show();
+                this.Close();
             }
         }
 
         private void makeHealthItem()
         {
             ImageBrush healthSprite = new ImageBrush();
-            healthSprite.ImageSource = new BitmapImage(new Uri("D:\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Images\\z6035094980366_cbabde7ef03bb75023d5a53014280bce.jpg"));
+            healthSprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Images/z6035094980366_cbabde7ef03bb75023d5a53014280bce.jpg"));
 
             Rectangle healthItem = new Rectangle
             {
@@ -539,7 +589,7 @@ namespace Space_battle_shooter_WPF
         private void makeBulletItem()
         {
             ImageBrush bulletSprite = new ImageBrush();
-            bulletSprite.ImageSource = new BitmapImage(new Uri("D:\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Images\\lzTai.jpg"));
+            bulletSprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Images/lzTai.jpg"));
 
             Rectangle bulletItem = new Rectangle
             {

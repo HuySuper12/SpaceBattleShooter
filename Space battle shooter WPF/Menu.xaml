@@ -5,21 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Space_battle_shooter_WPF"
         mc:Ignorable="d"
-        Title="Menu" Height="612" Width="660" WindowStartupLocation="CenterScreen" Icon="D:\PRN - game\Space battle shooter WPF\Space battle shooter WPF\Images\player.ico">
+        Title="Menu" Height="612" Width="660" WindowStartupLocation="CenterScreen" Icon="pack://application:,,,/Images/player.ico" ResizeMode="NoResize">
     <Grid Background="Black">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="141*"/>
             <ColumnDefinition Width="659*"/>
         </Grid.ColumnDefinitions>
 
-        <Image Source="D:\PRN - game\Space battle shooter WPF\Space battle shooter WPF\Images\purple.png" Stretch="Fill" Grid.ColumnSpan="2"/>
+        <Image Source="pack://application:,,,/Images/purple.png" Stretch="Fill" Grid.ColumnSpan="2"/>
 
-        <TextBlock Text="Space Shooter" FontSize="48" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="61,23,0,0" Grid.Column="1"/>
+        <TextBlock Text="Space Shooter" FontSize="48" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="61,23,0,0" Grid.Column="1"  FontWeight="Bold" />
 
-        <Button Content="Play" Width="200" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Green" Foreground="White" Margin="114,370,0,0" Grid.Column="1" Click="Button_Click"/>
+        <Button Content="Play" Width="200" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Green" Foreground="White" Margin="114,370,0,0" Grid.Column="1" Click="Button_Click" FontSize="25" FontWeight="Bold" />
 
 
         <!-- Spaceship Image -->
-        <Image Source="D:\PRN - game\Space battle shooter WPF\Space battle shooter WPF\Images\player.png" Width="230" Height="175" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="99,0,0,298" RenderTransformOrigin="2.228,-1.146" Grid.Column="1"/>
+        <Image Source="pack://application:,,,/Images/player.png" Width="230" Height="175" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="99,0,0,298" RenderTransformOrigin="2.228,-1.146" Grid.Column="1"/>
+        <Button Content="Quit" Width="200" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Red" Foreground="White" Margin="114,456,0,0" Grid.Column="1" Click="Button_Click_1" FontSize="25" FontWeight="Bold"  />
     </Grid>
 </Window>

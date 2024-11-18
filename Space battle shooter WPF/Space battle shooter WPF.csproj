@@ -9,4 +9,42 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Images\1.png" />
+    <None Remove="Images\2.png" />
+    <None Remove="Images\3.png" />
+    <None Remove="Images\4.png" />
+    <None Remove="Images\49-491551_preview-spaceship-boss-hd-png-download.png" />
+    <None Remove="Images\5.png" />
+    <None Remove="Images\lzTai.jpg" />
+    <None Remove="Images\player.ico" />
+    <None Remove="Images\player.png" />
+    <None Remove="Images\purple.png" />
+    <None Remove="Images\z6035094980366_cbabde7ef03bb75023d5a53014280bce.jpg" />
+    <None Remove="Sound\damage.wav" />
+    <None Remove="Sound\intro.wav" />
+    <None Remove="Sound\laser-gun-174976.wav" />
+    <None Remove="Sound\lose.wav" />
+    <None Remove="Sound\medium-explosion-40472.wav" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\1.png" />
+    <Resource Include="Images\2.png" />
+    <Resource Include="Images\3.png" />
+    <Resource Include="Images\4.png" />
+    <Resource Include="Images\49-491551_preview-spaceship-boss-hd-png-download.png" />
+    <Resource Include="Images\5.png" />
+    <Resource Include="Images\lzTai.jpg" />
+    <Resource Include="Images\player.ico" />
+    <Resource Include="Images\player.png" />
+    <Resource Include="Images\purple.png" />
+    <Resource Include="Images\z6035094980366_cbabde7ef03bb75023d5a53014280bce.jpg" />
+    <Resource Include="Sound\damage.wav" />
+    <Resource Include="Sound\intro.wav" />
+    <Resource Include="Sound\laser-gun-174976.wav" />
+    <Resource Include="Sound\lose.wav" />
+    <Resource Include="Sound\medium-explosion-40472.wav" />
+  </ItemGroup>
+
 </Project>

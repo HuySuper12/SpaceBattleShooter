@@ -33,7 +33,13 @@ namespace Space_battle_shooter_WPF
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Application.Current.Shutdown();
+            MessageBoxResult result = MessageBox.Show("Do you really want to quit the game?", "Quit?", MessageBoxButton.YesNo, MessageBoxImage.Stop);
+            if (result == MessageBoxResult.Yes)
+            {
+                Application.Current.Shutdown();
+            }
         }
+
+        
     }
 }
