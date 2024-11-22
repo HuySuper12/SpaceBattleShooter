@@ -170,7 +170,7 @@ namespace Space_battle_shooter_WPF
                 MyCanvas.Children.Add(newBullet5);
             }
 
-                shootSound.Position = TimeSpan.Zero;
+            shootSound.Position = TimeSpan.Zero;
             shootSound.Play();
         }
 
@@ -252,7 +252,7 @@ namespace Space_battle_shooter_WPF
                 enemyCounter = 30; // Enemies spawn faster
             }
 
-            if (damage == 0)
+            if (damage <= 0)
             {
                 ScoreService service = new();
                 service.AddScore(new Score() { Score1 = this.score, EntryDate = DateTime.Now });
@@ -478,6 +478,7 @@ namespace Space_battle_shooter_WPF
                     hasCollectedSecondBulletItem = false;
                     hasCollectedThirdBulletItem = false;
                     hasCollectedForthBulletItem = false;
+                    countEatBullet = 0;
 
                     // Reset movement flags
                     moveLeft = false;
@@ -610,8 +611,6 @@ namespace Space_battle_shooter_WPF
             // Clear any bullets that may have been shot
             itemsToRemove.Clear(); // Ensure itemsToRemove is cleared to reset bullet state
 
-
-
             // Reset player position
             Canvas.SetLeft(player, MyCanvas.ActualWidth / 2 - player.Width / 2);
             Canvas.SetTop(player, MyCanvas.ActualHeight - player.Height - 10);
@@ -619,12 +618,18 @@ namespace Space_battle_shooter_WPF
             // Reset bullet collection flags
             hasCollectedBulletItem = false;
             hasCollectedSecondBulletItem = false;
+            hasCollectedThirdBulletItem = false;
+            hasCollectedForthBulletItem = false;
+            countEatBullet = 0;
 
             // Restart timers
             gameTimer.Start();
             shootingTimer.Start();
             enemyShootingTimer.Start();
             bulletMoveTimer.Start();
+
+            introSound.Play();
+            shootSound.Play();
         }
 
         private void MainButton_Click(object sender, RoutedEventArgs e)

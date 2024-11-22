@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6X0E2MD63Tc=",
+  "dgSpecHash": "BW0VlgwKQOw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\Service\\Service.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\Documents\\TestProjectGame\\SpaceBattleShooter\\Service\\Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

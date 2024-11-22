@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\Repository\\Repository.csproj": {}
+    "C:\\Users\\Lenovo\\Documents\\TestProjectGame\\SpaceBattleShooter\\Repository\\Repository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\Repository\\Repository.csproj": {
+    "C:\\Users\\Lenovo\\Documents\\TestProjectGame\\SpaceBattleShooter\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Documents\\TestProjectGame\\SpaceBattleShooter\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\Repository\\Repository.csproj",
+        "projectPath": "C:\\Users\\Lenovo\\Documents\\TestProjectGame\\SpaceBattleShooter\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\Repository\\obj\\",
+        "outputPath": "C:\\Users\\Lenovo\\Documents\\TestProjectGame\\SpaceBattleShooter\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

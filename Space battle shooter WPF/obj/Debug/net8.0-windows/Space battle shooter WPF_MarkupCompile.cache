@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\obj\Debug\net8.0-windows\
+C:\Users\Lenovo\Documents\TestProjectGame\SpaceBattleShooter\Space battle shooter WPF\obj\Debug\net8.0-windows\
 Space_battle_shooter_WPF
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\App.xaml
+C:\Users\Lenovo\Documents\TestProjectGame\SpaceBattleShooter\Space battle shooter WPF\App.xaml
 3-1611088858
 5768213286
 6-2033651249
-2361175321889
+236-751026216
 MainWindow.xaml;Menu.xaml;ScoreBoard.xaml;
 
 False
