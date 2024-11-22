@@ -24,4 +24,4 @@ Are you ready to explore space and fight against hostile forces? Space Battle Sh
 
 📷 Screenshots:
 
-![](image/image1.png) ![](image/image2.jpg)
+![](images/image1.png) ![](images/image2.jpg)
