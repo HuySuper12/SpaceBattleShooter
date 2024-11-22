@@ -61,3 +61,91 @@ C:\Users\Lenovo\Downloads\SE1865_Team8386_SpaceShooter\PRN - game\Space battle s
 C:\Users\Lenovo\Downloads\SE1865_Team8386_SpaceShooter\PRN - game\Space battle shooter WPF\Space battle shooter WPF\obj\Debug\net8.0-windows\Space battle shooter WPF.pdb
 C:\Users\Lenovo\Downloads\SE1865_Team8386_SpaceShooter\PRN - game\Space battle shooter WPF\Space battle shooter WPF\obj\Debug\net8.0-windows\Space battle shooter WPF.genruntimeconfig.cache
 C:\Users\Lenovo\Downloads\SE1865_Team8386_SpaceShooter\PRN - game\Space battle shooter WPF\Space battle shooter WPF\obj\Debug\net8.0-windows\ref\Space battle shooter WPF.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Space battle shooter WPF.exe
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Sounds\damage.mp3
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Sounds\intro.mp3
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Sounds\laser-gun-174976.mp3
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Sounds\lose.mp3
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Sounds\medium-explosion-40472.mp3
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\appsettings.json
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Space battle shooter WPF.deps.json
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Space battle shooter WPF.runtimeconfig.json
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Space battle shooter WPF.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Space battle shooter WPF.pdb
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Azure.Core.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Azure.Identity.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\System.ClientModel.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\System.Formats.Asn1.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\System.Memory.Data.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\System.Runtime.Caching.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\System.Text.Json.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Repository.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Service.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Repository.pdb
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\bin\Debug\net8.0-windows\Service.pdb
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\obj\Debug\net8.0-windows\Space battle shooter WPF.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\obj\Debug\net8.0-windows\Menu.g.cs
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\obj\Debug\net8.0-windows\ScoreBoard.g.cs
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\obj\Debug\net8.0-windows\Space battle shooter WPF_Content.g.cs
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\obj\Debug\net8.0-windows\Space battle shooter WPF_MarkupCompile.cache
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\obj\Debug\net8.0-windows\Space battle shooter WPF_MarkupCompile.lref
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\obj\Debug\net8.0-windows\App.baml
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\obj\Debug\net8.0-windows\Menu.baml
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\obj\Debug\net8.0-windows\ScoreBoard.baml
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\obj\Debug\net8.0-windows\Space battle shooter WPF.g.resources
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\obj\Debug\net8.0-windows\Space battle shooter WPF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\obj\Debug\net8.0-windows\Space battle shooter WPF.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\obj\Debug\net8.0-windows\Space battle shooter WPF.AssemblyInfo.cs
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\obj\Debug\net8.0-windows\Space battle shooter WPF.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\obj\Debug\net8.0-windows\Space battle shooter WPF.sourcelink.json
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\obj\Debug\net8.0-windows\Space ba.850752FB.Up2Date
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\obj\Debug\net8.0-windows\Space battle shooter WPF.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\obj\Debug\net8.0-windows\refint\Space battle shooter WPF.dll
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\obj\Debug\net8.0-windows\Space battle shooter WPF.pdb
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\obj\Debug\net8.0-windows\Space battle shooter WPF.genruntimeconfig.cache
+C:\Users\Lenovo\Downloads\SpaceBattleShooter\SpaceBattleShooter\Space battle shooter WPF\obj\Debug\net8.0-windows\ref\Space battle shooter WPF.dll

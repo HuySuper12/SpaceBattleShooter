@@ -21,6 +21,7 @@
 
         <!-- Spaceship Image -->
         <Image Source="pack://application:,,,/Images/player.png" Width="230" Height="175" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="99,0,0,298" RenderTransformOrigin="2.228,-1.146" Grid.Column="1"/>
-        <Button Content="Quit" Width="200" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Red" Foreground="White" Margin="114,456,0,0" Grid.Column="1" Click="Button_Click_1" FontSize="25" FontWeight="Bold"  />
+        <Button Content="Quit" Width="200" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Red" Foreground="White" Margin="272,471,0,0" Grid.Column="1" Click="Button_Click_1" FontSize="25" FontWeight="Bold"  />
+        <Button Content="Score" Width="200" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Brown" Foreground="White" Margin="83,471,0,0"  FontSize="25" FontWeight="Bold" Grid.ColumnSpan="2" Click="Button_Click_2"  />
     </Grid>
 </Window>

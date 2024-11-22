@@ -40,6 +40,10 @@ namespace Space_battle_shooter_WPF
             }
         }
 
-        
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            ScoreBoard scoreBoard = new ScoreBoard();
+            scoreBoard.ShowDialog();
+        }
     }
 }

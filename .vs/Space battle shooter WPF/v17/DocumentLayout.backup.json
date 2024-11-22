@@ -1,29 +1,68 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Lenovo\\Downloads\\SE1865_Team8386_SpaceShooter\\PRN - game\\Space battle shooter WPF\\",
+  "WorkspaceRootPath": "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3FD10972-7C83-43AA-A4FF-2435CFFE5E90}|Space battle shooter WPF\\Space battle shooter WPF.csproj|c:\\users\\lenovo\\downloads\\se1865_team8386_spaceshooter\\prn - game\\space battle shooter wpf\\space battle shooter wpf\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{3FD10972-7C83-43AA-A4FF-2435CFFE5E90}|Space battle shooter WPF\\Space battle shooter WPF.csproj|solutionrelative:space battle shooter wpf\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3FD10972-7C83-43AA-A4FF-2435CFFE5E90}|Space battle shooter WPF\\Space battle shooter WPF.csproj|c:\\users\\lenovo\\downloads\\se1865_team8386_spaceshooter\\prn - game\\space battle shooter wpf\\space battle shooter wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3FD10972-7C83-43AA-A4FF-2435CFFE5E90}|Space battle shooter WPF\\Space battle shooter WPF.csproj|solutionrelative:space battle shooter wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3FD10972-7C83-43AA-A4FF-2435CFFE5E90}|Space battle shooter WPF\\Space battle shooter WPF.csproj|c:\\users\\lenovo\\downloads\\se1865_team8386_spaceshooter\\prn - game\\space battle shooter wpf\\space battle shooter wpf\\menu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3FD10972-7C83-43AA-A4FF-2435CFFE5E90}|Space battle shooter WPF\\Space battle shooter WPF.csproj|solutionrelative:space battle shooter wpf\\menu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3FD10972-7C83-43AA-A4FF-2435CFFE5E90}|Space battle shooter WPF\\Space battle shooter WPF.csproj|c:\\users\\lenovo\\downloads\\se1865_team8386_spaceshooter\\prn - game\\space battle shooter wpf\\space battle shooter wpf\\menu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3FD10972-7C83-43AA-A4FF-2435CFFE5E90}|Space battle shooter WPF\\Space battle shooter WPF.csproj|c:\\users\\lenovo\\downloads\\spacebattleshooter\\spacebattleshooter\\space battle shooter wpf\\menu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3FD10972-7C83-43AA-A4FF-2435CFFE5E90}|Space battle shooter WPF\\Space battle shooter WPF.csproj|solutionrelative:space battle shooter wpf\\menu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3FD10972-7C83-43AA-A4FF-2435CFFE5E90}|Space battle shooter WPF\\Space battle shooter WPF.csproj|c:\\users\\lenovo\\downloads\\se1865_team8386_spaceshooter\\prn - game\\space battle shooter wpf\\space battle shooter wpf\\images\\player.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "AbsoluteMoniker": "D:0:0:{3FD10972-7C83-43AA-A4FF-2435CFFE5E90}|Space battle shooter WPF\\Space battle shooter WPF.csproj|c:\\users\\lenovo\\downloads\\spacebattleshooter\\spacebattleshooter\\space battle shooter wpf\\menu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3FD10972-7C83-43AA-A4FF-2435CFFE5E90}|Space battle shooter WPF\\Space battle shooter WPF.csproj|solutionrelative:space battle shooter wpf\\menu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FD10972-7C83-43AA-A4FF-2435CFFE5E90}|Space battle shooter WPF\\Space battle shooter WPF.csproj|c:\\users\\lenovo\\downloads\\spacebattleshooter\\spacebattleshooter\\space battle shooter wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3FD10972-7C83-43AA-A4FF-2435CFFE5E90}|Space battle shooter WPF\\Space battle shooter WPF.csproj|solutionrelative:space battle shooter wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FD10972-7C83-43AA-A4FF-2435CFFE5E90}|Space battle shooter WPF\\Space battle shooter WPF.csproj|c:\\users\\lenovo\\downloads\\spacebattleshooter\\spacebattleshooter\\space battle shooter wpf\\scoreboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3FD10972-7C83-43AA-A4FF-2435CFFE5E90}|Space battle shooter WPF\\Space battle shooter WPF.csproj|solutionrelative:space battle shooter wpf\\scoreboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59FE0F5E-4364-4C50-854B-3FE3864CDAF2}|Service\\Service.csproj|c:\\users\\lenovo\\downloads\\spacebattleshooter\\spacebattleshooter\\service\\services\\scoreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59FE0F5E-4364-4C50-854B-3FE3864CDAF2}|Service\\Service.csproj|solutionrelative:service\\services\\scoreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63DECDFF-2D35-4DAD-A419-B21B64550F05}|Repository\\Repository.csproj|c:\\users\\lenovo\\downloads\\spacebattleshooter\\spacebattleshooter\\repository\\repositories\\scorerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63DECDFF-2D35-4DAD-A419-B21B64550F05}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\scorerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FD10972-7C83-43AA-A4FF-2435CFFE5E90}|Space battle shooter WPF\\Space battle shooter WPF.csproj|c:\\users\\lenovo\\downloads\\spacebattleshooter\\spacebattleshooter\\space battle shooter wpf\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{3FD10972-7C83-43AA-A4FF-2435CFFE5E90}|Space battle shooter WPF\\Space battle shooter WPF.csproj|solutionrelative:space battle shooter wpf\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FD10972-7C83-43AA-A4FF-2435CFFE5E90}|Space battle shooter WPF\\Space battle shooter WPF.csproj|c:\\users\\lenovo\\downloads\\spacebattleshooter\\spacebattleshooter\\space battle shooter wpf\\scoreboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FD10972-7C83-43AA-A4FF-2435CFFE5E90}|Space battle shooter WPF\\Space battle shooter WPF.csproj|solutionrelative:space battle shooter wpf\\scoreboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63DECDFF-2D35-4DAD-A419-B21B64550F05}|Repository\\Repository.csproj|c:\\users\\lenovo\\downloads\\spacebattleshooter\\spacebattleshooter\\repository\\scoreboarddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63DECDFF-2D35-4DAD-A419-B21B64550F05}|Repository\\Repository.csproj|solutionrelative:repository\\scoreboarddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63DECDFF-2D35-4DAD-A419-B21B64550F05}|Repository\\Repository.csproj|c:\\users\\lenovo\\downloads\\spacebattleshooter\\spacebattleshooter\\repository\\entities\\score.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63DECDFF-2D35-4DAD-A419-B21B64550F05}|Repository\\Repository.csproj|solutionrelative:repository\\entities\\score.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FD10972-7C83-43AA-A4FF-2435CFFE5E90}|Space battle shooter WPF\\Space battle shooter WPF.csproj|c:\\users\\lenovo\\downloads\\spacebattleshooter\\spacebattleshooter\\space battle shooter wpf\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3FD10972-7C83-43AA-A4FF-2435CFFE5E90}|Space battle shooter WPF\\Space battle shooter WPF.csproj|solutionrelative:space battle shooter wpf\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63DECDFF-2D35-4DAD-A419-B21B64550F05}|Repository\\Repository.csproj|c:\\users\\lenovo\\downloads\\spacebattleshooter\\spacebattleshooter\\repository\\entities\\scoresorted.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63DECDFF-2D35-4DAD-A419-B21B64550F05}|Repository\\Repository.csproj|solutionrelative:repository\\entities\\scoresorted.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FD10972-7C83-43AA-A4FF-2435CFFE5E90}|Space battle shooter WPF\\Space battle shooter WPF.csproj|c:\\users\\lenovo\\downloads\\spacebattleshooter\\spacebattleshooter\\space battle shooter wpf\\space battle shooter wpf.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3FD10972-7C83-43AA-A4FF-2435CFFE5E90}|Space battle shooter WPF\\Space battle shooter WPF.csproj|solutionrelative:space battle shooter wpf\\space battle shooter wpf.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\8.0.403\\Sdks\\Microsoft.NET.Sdk.WindowsDesktop\\targets\\Microsoft.WinFX.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FD10972-7C83-43AA-A4FF-2435CFFE5E90}|Space battle shooter WPF\\Space battle shooter WPF.csproj|c:\\users\\lenovo\\downloads\\spacebattleshooter\\spacebattleshooter\\space battle shooter wpf\\images\\player.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
       "RelativeMoniker": "D:0:0:{3FD10972-7C83-43AA-A4FF-2435CFFE5E90}|Space battle shooter WPF\\Space battle shooter WPF.csproj|solutionrelative:space battle shooter wpf\\images\\player.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3FD10972-7C83-43AA-A4FF-2435CFFE5E90}|Space battle shooter WPF\\Space battle shooter WPF.csproj|c:\\users\\lenovo\\downloads\\se1865_team8386_spaceshooter\\prn - game\\space battle shooter wpf\\space battle shooter wpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{3FD10972-7C83-43AA-A4FF-2435CFFE5E90}|Space battle shooter WPF\\Space battle shooter WPF.csproj|c:\\users\\lenovo\\downloads\\spacebattleshooter\\spacebattleshooter\\space battle shooter wpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{3FD10972-7C83-43AA-A4FF-2435CFFE5E90}|Space battle shooter WPF\\Space battle shooter WPF.csproj|solutionrelative:space battle shooter wpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -34,7 +73,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,36 +101,47 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\SE1865_Team8386_SpaceShooter\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Space battle shooter WPF\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\SE1865_Team8386_SpaceShooter\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\MainWindow.xaml.cs",
-              "RelativeToolTip": "Space battle shooter WPF\\MainWindow.xaml.cs",
-              "ViewState": "AgIAADwCAAAAAAAAAAAcwD4CAABXAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "ScoreBoardDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\Repository\\ScoreBoardDbContext.cs",
+              "RelativeDocumentMoniker": "Repository\\ScoreBoardDbContext.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\Repository\\ScoreBoardDbContext.cs",
+              "RelativeToolTip": "Repository\\ScoreBoardDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T10:46:53.377Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-21T14:52:18.419Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\Space battle shooter WPF\\appsettings.json",
+              "RelativeDocumentMoniker": "Space battle shooter WPF\\appsettings.json",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\Space battle shooter WPF\\appsettings.json",
+              "RelativeToolTip": "Space battle shooter WPF\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-21T14:52:51.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Space battle shooter WPF.csproj",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\Space battle shooter WPF\\Space battle shooter WPF.csproj",
+              "RelativeDocumentMoniker": "Space battle shooter WPF\\Space battle shooter WPF.csproj",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\Space battle shooter WPF\\Space battle shooter WPF.csproj",
+              "RelativeToolTip": "Space battle shooter WPF\\Space battle shooter WPF.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-21T14:03:26.975Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Menu.xaml",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\SE1865_Team8386_SpaceShooter\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Menu.xaml",
-              "RelativeDocumentMoniker": "Space battle shooter WPF\\Menu.xaml",
-              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\SE1865_Team8386_SpaceShooter\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Menu.xaml",
-              "RelativeToolTip": "Space battle shooter WPF\\Menu.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-15T03:58:04.257Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\SE1865_Team8386_SpaceShooter\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\Space battle shooter WPF\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Space battle shooter WPF\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\SE1865_Team8386_SpaceShooter\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\Space battle shooter WPF\\MainWindow.xaml",
               "RelativeToolTip": "Space battle shooter WPF\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-11-14T10:46:50.287Z",
@@ -99,39 +149,150 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "player.png - PNG [112x75, 32 bit, PNG]",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\SE1865_Team8386_SpaceShooter\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Images\\player.png",
-              "RelativeDocumentMoniker": "Space battle shooter WPF\\Images\\player.png",
-              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\SE1865_Team8386_SpaceShooter\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Images\\player.png - PNG [112x75, 32 bit, PNG]",
-              "RelativeToolTip": "Space battle shooter WPF\\Images\\player.png - PNG [112x75, 32 bit, PNG]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2024-11-15T07:59:50.977Z",
-              "EditorCaption": " - PNG [112x75, 32 bit, PNG]"
+              "DocumentIndex": 0,
+              "Title": "Menu.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\Space battle shooter WPF\\Menu.xaml.cs",
+              "RelativeDocumentMoniker": "Space battle shooter WPF\\Menu.xaml.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\Space battle shooter WPF\\Menu.xaml.cs",
+              "RelativeToolTip": "Space battle shooter WPF\\Menu.xaml.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAArwC4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T06:05:09.211Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\SE1865_Team8386_SpaceShooter\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\App.xaml",
-              "RelativeDocumentMoniker": "Space battle shooter WPF\\App.xaml",
-              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\SE1865_Team8386_SpaceShooter\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\App.xaml",
-              "RelativeToolTip": "Space battle shooter WPF\\App.xaml",
+              "Title": "ScoreRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\Repository\\Repositories\\ScoreRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repositories\\ScoreRepository.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\Repository\\Repositories\\ScoreRepository.cs",
+              "RelativeToolTip": "Repository\\Repositories\\ScoreRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T14:57:11.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\Space battle shooter WPF\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Space battle shooter WPF\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\Space battle shooter WPF\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Space battle shooter WPF\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAF8CAAAAAAAAAAAUwEkAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T10:46:53.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Menu.xaml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\Space battle shooter WPF\\Menu.xaml",
+              "RelativeDocumentMoniker": "Space battle shooter WPF\\Menu.xaml",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\Space battle shooter WPF\\Menu.xaml",
+              "RelativeToolTip": "Space battle shooter WPF\\Menu.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-15T04:52:27.508Z",
+              "WhenOpened": "2024-11-15T03:58:04.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ScoreService.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\Service\\Services\\ScoreService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\ScoreService.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\Service\\Services\\ScoreService.cs",
+              "RelativeToolTip": "Service\\Services\\ScoreService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T15:02:12.08Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Menu.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\SE1865_Team8386_SpaceShooter\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Menu.xaml.cs",
-              "RelativeDocumentMoniker": "Space battle shooter WPF\\Menu.xaml.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\SE1865_Team8386_SpaceShooter\\PRN - game\\Space battle shooter WPF\\Space battle shooter WPF\\Menu.xaml.cs",
-              "RelativeToolTip": "Space battle shooter WPF\\Menu.xaml.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAiwBcAAAAMAAAAAAAAAA==",
+              "Title": "ScoreBoard.xaml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\Space battle shooter WPF\\ScoreBoard.xaml",
+              "RelativeDocumentMoniker": "Space battle shooter WPF\\ScoreBoard.xaml",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\Space battle shooter WPF\\ScoreBoard.xaml",
+              "RelativeToolTip": "Space battle shooter WPF\\ScoreBoard.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-21T13:49:52.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ScoreBoard.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\Space battle shooter WPF\\ScoreBoard.xaml.cs",
+              "RelativeDocumentMoniker": "Space battle shooter WPF\\ScoreBoard.xaml.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\Space battle shooter WPF\\ScoreBoard.xaml.cs",
+              "RelativeToolTip": "Space battle shooter WPF\\ScoreBoard.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T06:05:09.211Z",
+              "WhenOpened": "2024-11-21T14:05:13.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ScoreSorted.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\Repository\\Entities\\ScoreSorted.cs",
+              "RelativeDocumentMoniker": "Repository\\Entities\\ScoreSorted.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\Repository\\Entities\\ScoreSorted.cs",
+              "RelativeToolTip": "Repository\\Entities\\ScoreSorted.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T14:51:48.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Score.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\Repository\\Entities\\Score.cs",
+              "RelativeDocumentMoniker": "Repository\\Entities\\Score.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\Repository\\Entities\\Score.cs",
+              "RelativeToolTip": "Repository\\Entities\\Score.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T14:51:11.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Microsoft.WinFX.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\Sdks\\Microsoft.NET.Sdk.WindowsDesktop\\targets\\Microsoft.WinFX.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\8.0.403\\Sdks\\Microsoft.NET.Sdk.WindowsDesktop\\targets\\Microsoft.WinFX.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\Sdks\\Microsoft.NET.Sdk.WindowsDesktop\\targets\\Microsoft.WinFX.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\8.0.403\\Sdks\\Microsoft.NET.Sdk.WindowsDesktop\\targets\\Microsoft.WinFX.targets",
+              "ViewState": "AgIAAKECAAAAAAAAAADgv8QCAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-11-20T17:09:55.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "player.png -  [English (United States)] - PNG [112x75, 32 bit, PNG]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\Space battle shooter WPF\\Images\\player.png",
+              "RelativeDocumentMoniker": "Space battle shooter WPF\\Images\\player.png",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\Space battle shooter WPF\\Images\\player.png -  [English (United States)] - PNG [112x75, 32 bit, PNG]",
+              "RelativeToolTip": "Space battle shooter WPF\\Images\\player.png -  [English (United States)] - PNG [112x75, 32 bit, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-11-15T07:59:50.977Z",
+              "EditorCaption": " -  [English (United States)] - PNG [112x75, 32 bit, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\Space battle shooter WPF\\App.xaml",
+              "RelativeDocumentMoniker": "Space battle shooter WPF\\App.xaml",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\SpaceBattleShooter\\SpaceBattleShooter\\Space battle shooter WPF\\App.xaml",
+              "RelativeToolTip": "Space battle shooter WPF\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-15T04:52:27.508Z",
               "EditorCaption": ""
             }
           ]
